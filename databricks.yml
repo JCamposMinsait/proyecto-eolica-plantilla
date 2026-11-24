@@ -1,0 +1,25 @@
+# Bundle del proyecto: describe qué se despliega en Databricks.
+# El workspace y el token no van aquí: los pone la CD con los secretos del repositorio.
+bundle:
+  name: proyecto_eolica
+
+variables:
+  catalogo:
+    description: Catálogo donde está vuestra tabla bronze_telemetria
+    default: formacion
+
+resources:
+  jobs:
+    limpieza_eolica:
+      name: limpieza-eolica
+      tasks:
+        - task_key: usar_modulo
+          notebook_task:
+            notebook_path: ./notebooks/usar_modulo.py
+            base_parameters:
+              catalogo: ${var.catalogo}
+
+targets:
+  dev:
+    mode: development
+    default: true
