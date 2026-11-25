@@ -1,6 +1,6 @@
 # proyecto_eolica
 
-El proyecto del día 5: las funciones de limpieza de la telemetría en un módulo de Python, sus tests y una CI/CD en GitHub Actions que pasa los tests en cada cambio y, si lo activas, despliega el proyecto en tu Databricks.
+Es el proyecto del día 5. Tiene las funciones de limpieza de la telemetría en un módulo de Python, sus tests y una CI/CD en GitHub Actions que pasa los tests en cada cambio y, si la activas, despliega el proyecto en tu Databricks.
 
 ```
 proyecto_eolica/
@@ -13,14 +13,14 @@ proyecto_eolica/
 
 ## 1 · Tu repositorio en GitHub
 
-**Con la plantilla (lo normal).** Abre el enlace que te pasa el formador, pulsa **Use this template → Create a new repository**, ponle de nombre `proyecto-eolica`, déjalo privado y créalo.
+**Con la plantilla (lo normal).** Abre https://github.com/JCamposMinsait/proyecto-eolica-plantilla, pulsa **Use this template → Create a new repository**, ponle de nombre `proyecto-eolica`, déjalo privado y créalo.
 
 **A mano, si no hay plantilla.**
 1. En GitHub, **New repository**: `proyecto-eolica`, privado y sin README.
 2. Descarga el repo del curso (**Code → Download ZIP**), descomprímelo y sube el contenido de la carpeta `proyecto_eolica` con **Add file → Upload files**.
 3. Comprueba que se ha subido la carpeta `.github`. Muchos navegadores no suben carpetas que empiezan por punto. Si falta, créala con **Add file → Create new file**, escribiendo como nombre `.github/workflows/ci_cd.yml` y pegando su contenido.
 
-Al crear el repo, la CI arranca sola. Mírala en la pestaña **Actions**: falla, porque falta una función y su test por escribir. Es lo esperado.
+Al crear el repo, la CI arranca sola. En la pestaña **Actions** verás que falla, porque faltan por escribir una función y su test. Es lo esperado.
 
 ## 2 · Conectar Databricks con GitHub
 
